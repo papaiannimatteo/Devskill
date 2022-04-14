@@ -1,0 +1,11 @@
+let Input1:number =prompt('Inserisci un numero');
+let Input2:number =prompt('Inserisci un numero');
+let somma:number = (Input1*1)+(Input2*1);
+let sottr:number = Input1-Input2;
+let molt:number = Input1*Input2;
+let div:number = Input1/Input2;
+console.log(somma);
+console.log(sottr);
+console.log(molt);
+console.log(div);
+

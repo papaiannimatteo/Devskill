@@ -1,0 +1,33 @@
+/*
+Si scriva un programma che presi in input 3 valori, verifichi e stampi a schermo quali tra questi e` il piu` grande
+a schermo :
+E.S
+Input: 3 54 12
+Output: Il valore piu` grande e` : 54
+*/
+
+
+//Soluzione:
+
+let numero1:number=prompt("Inserisci il primo numero")*1;
+let numero2:number=prompt("Inserisci il secondo numero")*1;
+let numero3:number=prompt("Inserisci il terzo numero")*1;
+
+if (numero1 >= numero2) {
+    if (numero1 >= numero3) {
+        console.log ("Il valore più grande è: "+numero1);
+    }
+    else if (numero1 <= numero3) {
+        console.log ("Il valore più grande è: "+numero3);
+    }
+
+}
+else if (numero2 >= numero1) {
+    if (numero2 >= numero3) {
+        console.log("Il valore più grande è: "+numero2);
+    }
+    else if (numero2 <= numero3) {
+        console.log("Il valore più grande è: "+numero3);
+    }
+}
+   

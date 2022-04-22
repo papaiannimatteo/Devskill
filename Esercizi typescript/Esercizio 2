@@ -1,6 +1,0 @@
-let Input1:string = prompt('inserisci una parola');
-let Input2:string = prompt('inserisci una parola');
-let concat1:string = Input1+Input2;
-let concat2:string = Input2+Input1;
-console.log(concat1);
-console.log(concat2);

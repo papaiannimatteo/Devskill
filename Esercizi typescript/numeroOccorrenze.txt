@@ -1,0 +1,53 @@
+
+// DIFFICILE //
+// Scrivere un programma prenda una sequenza di numeri, terminata -1.
+// Restituisca il numero con il piu` alto numero di occorrenze .
+
+// Input : 2 3 4 2 3 1 0 1 4 4 4 0 9 19 5 -1
+// Ouput : Il numero con piu` occorrenze e` 4 
+
+
+
+function leggiInput():number {
+    return +prompt("Inserisci un numero \n Inserisci -1 per terminare")*1;
+}
+
+let array:number[]=[];
+let input = leggiInput();
+
+while (input != -1) {
+
+  
+  array.push(input);
+  input = leggiInput();
+  
+
+}
+let maxOcc = 0;
+let n = 0;
+
+
+for(let i=0; i<array.length; i++) {
+
+    let count=1;
+    
+    
+
+    for(let j=i+1; j<array.length; j++){
+        
+
+
+        if(array[i]===array[j]) {
+        count++
+        }
+        if(count>maxOcc){
+            maxOcc=count;
+            n=array[i];
+        }
+
+    }
+    
+    
+
+}
+console.log(n,maxOcc);

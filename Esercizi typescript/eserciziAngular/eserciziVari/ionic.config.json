@@ -1,0 +1,7 @@
+{
+  "name": "eserciziVari",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

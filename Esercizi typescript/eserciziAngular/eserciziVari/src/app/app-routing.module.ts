@@ -8,13 +8,17 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'ex-uva',
+    redirectTo: 'login',
     pathMatch: 'full'
   },
   
   {
     path: 'ex-uva',
     loadChildren: () => import('./pages/ex-uva/ex-uva.module').then( m => m.ExUvaPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
   },
 ];
 

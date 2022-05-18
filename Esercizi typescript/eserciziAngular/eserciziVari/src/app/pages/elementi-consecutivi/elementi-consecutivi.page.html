@@ -1,34 +1,32 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>elementiConsecutivi</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
-  <ion-grid>
-    <ion-row>
-      <ion-col>
-        <ion-item>
-          <ion-label position="floating">Inserisci un numero</ion-label>
-          <ion-input [(ngModel)]="input"></ion-input>
-        </ion-item>
-      </ion-col>
-      <ion-col>
-        <ion-item>
-          <ion-label position="floating">N</ion-label>
-          <ion-input [(ngModel)]="n"></ion-input>
-        </ion-item>
-      </ion-col>
-      <ion-col>
-        <ion-item>
-          <ion-label position="floating">Risultato</ion-label>
-          <ion-input [value]="risultato"></ion-input>
-        </ion-item>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-button (click)="inviaInput()">Invia input</ion-button>
-    </ion-row>
-  </ion-grid>
-
+  <ion-card class="favCard">
+    <ion-card-header>
+      <img src="assets/icon/consecutive.png" />
+    </ion-card-header>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-item>
+            <ion-label position="floating">Inserisci un numero</ion-label>
+            <ion-input [(ngModel)]="input"></ion-input>
+          </ion-item>
+        </ion-row>
+        <ion-row>
+          <ion-item>
+            <ion-label position="floating">N</ion-label>
+            <ion-input [(ngModel)]="n"></ion-input>
+          </ion-item>
+        </ion-row>
+        <ion-row>
+          <ion-item>
+            <ion-label position="floating">Risultato</ion-label>
+            <ion-input [value]="risultato"></ion-input>
+          </ion-item>
+        </ion-row>
+        <ion-row>
+          <ion-button (click)="inviaInput()" color="light">Invia input</ion-button>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

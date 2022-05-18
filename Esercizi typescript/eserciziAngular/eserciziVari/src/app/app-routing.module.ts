@@ -8,17 +8,35 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'login',
+    redirectTo: 'home',
     pathMatch: 'full'
   },
   
+  
+
   {
-    path: 'ex-uva',
-    loadChildren: () => import('./pages/ex-uva/ex-uva.module').then( m => m.ExUvaPageModule)
+    path: 'ok-no',
+    loadChildren: () => import('./pages/ok-no/ok-no.module').then( m => m.OkNoPageModule)
   },
   {
-    path: 'login',
-    loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
+    path: 'elementi-consecutivi',
+    loadChildren: () => import('./pages/elementi-consecutivi/elementi-consecutivi.module').then( m => m.ElementiConsecutiviPageModule)
+  },
+  {
+    path: 'n-inv',
+    loadChildren: () => import('./pages/n-inv/n-inv.module').then( m => m.NInvPageModule)
+  },
+  {
+    path: 'minori-di-x',
+    loadChildren: () => import('./pages/minori-di-x/minori-di-x.module').then( m => m.MinoriDiXPageModule)
+  },
+  {
+    path: 'divisibile-per3',
+    loadChildren: () => import('./pages/divisibile-per3/divisibile-per3.module').then( m => m.DivisibilePer3PageModule)
+  },
+  {
+    path: 'crescente-decrescente',
+    loadChildren: () => import('./pages/crescente-decrescente/crescente-decrescente.module').then( m => m.CrescenteDecrescentePageModule)
   },
 ];
 

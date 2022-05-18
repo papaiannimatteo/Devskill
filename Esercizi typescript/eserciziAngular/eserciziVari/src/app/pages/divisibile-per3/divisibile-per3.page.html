@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>divisibilePer3</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label position="floating">Inserisci dei numeri</ion-label>
+          <ion-input [(ngModel)]="input"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item>
+          <ion-label position="floating">RisultatoN</ion-label>
+          <ion-input [value]="risultatoN" readonly="true"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col>
+        <ion-item>
+          <ion-label position="floating">RisultatoS</ion-label>
+          <ion-input [value]="risultatoS" readonly="true"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-button (click)="calcolaDivisibile()">Run</ion-button>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

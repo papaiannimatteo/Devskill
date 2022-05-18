@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { ExUvaPageRoutingModule } from './ex-uva-routing.module';
+import { NInvPageRoutingModule } from './n-inv-routing.module';
 
-import { ExUvaPage } from './ex-uva.page';
+import { NInvPage } from './n-inv.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ExUvaPageRoutingModule
+    NInvPageRoutingModule
   ],
-  declarations: [ExUvaPage]
+  declarations: [NInvPage]
 })
-export class ExUvaPageModule {}
+export class NInvPageModule {}

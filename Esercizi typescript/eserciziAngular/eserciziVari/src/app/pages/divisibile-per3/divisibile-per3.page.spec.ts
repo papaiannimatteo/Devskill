@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { ExUvaPage } from './ex-uva.page';
+import { DivisibilePer3Page } from './divisibile-per3.page';
 
-describe('ExUvaPage', () => {
-  let component: ExUvaPage;
-  let fixture: ComponentFixture<ExUvaPage>;
+describe('DivisibilePer3Page', () => {
+  let component: DivisibilePer3Page;
+  let fixture: ComponentFixture<DivisibilePer3Page>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ ExUvaPage ],
+      declarations: [ DivisibilePer3Page ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(ExUvaPage);
+    fixture = TestBed.createComponent(DivisibilePer3Page);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

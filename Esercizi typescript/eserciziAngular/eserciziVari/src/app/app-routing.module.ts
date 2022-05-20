@@ -37,7 +37,15 @@ const routes: Routes = [
   {
     path: 'crescente-decrescente',
     loadChildren: () => import('./pages/crescente-decrescente/crescente-decrescente.module').then( m => m.CrescenteDecrescentePageModule)
+  },  {
+    path: 'lista',
+    loadChildren: () => import('./pages/lista/lista.module').then( m => m.ListaPageModule)
   },
+  {
+    path: 'grid',
+    loadChildren: () => import('./pages/grid/grid.module').then( m => m.GridPageModule)
+  },
+
 ];
 
 @NgModule({
